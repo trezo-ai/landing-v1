@@ -1,0 +1,22 @@
+<!-- @license lucide-static v0.544.0 - ISC -->
+<svg
+  class="lucide lucide-trending-up"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="1" stdDeviation="0.5" flood-opacity="0.15" />
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="22" height="22" rx="5" fill="none" stroke="currentColor" stroke-opacity="0.25" stroke-width="1" filter="url(#shadow)" />
+  <path d="M16 7h6v6" />
+  <path d="m22 7-8.5 8.5-5-5L2 17" />
+</svg>

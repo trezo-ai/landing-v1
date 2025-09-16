@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import screenshot from "./screenshot.png";
 import {
   Check,
   ChevronRight,
@@ -21,6 +22,7 @@ import {
   PhoneCall,
   MessagesSquare,
   Play,
+  TrendingUp,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -123,6 +125,7 @@ export default function LandingPage() {
         <div className="w-full max-w-none px-4 md:px-6 grid grid-cols-[1fr_auto_1fr] h-16 items-center">
           <div className="flex items-center gap-2 font-bold">
             {/*<Logo className="size-8 shadow-sm" iconSize={18} strokeWidth={2.5} />*/}
+            <TrendingUp className="size-5" />
             <span>Trezo</span>
           </div>
           <nav className="hidden md:flex gap-8 justify-center">
@@ -332,19 +335,22 @@ export default function LandingPage() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="relative mx-auto max-w-5xl"
             >
-              <div className="rounded-xl overflow-hidden shadow-2xl border border-border/40 bg-gradient-to-b from-background to-muted/20">
+              {/* 3D Window Frame */}
+              <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-xl bg-gradient-to-br from-neutral-200/60 to-neutral-300/60 dark:from-neutral-700/60 dark:to-neutral-800/60 shadow-xl"></div>
+              <div className="absolute inset-0 -z-10 translate-x-1 translate-y-1 rounded-xl bg-gradient-to-br from-neutral-100/80 to-neutral-200/80 dark:from-neutral-600/80 dark:to-neutral-700/80 shadow-lg"></div>
+              
+              {/* Screenshot Container */}
+              <div className="relative rounded-xl overflow-hidden shadow-2xl border border-border/40">
                 <Image
-                  src="https://cdn.dribbble.com/userupload/12302729/file/original-fa372845e394ee85bebe0389b9d86871.png?resize=1504x1128&vertical=center"
+                  src={screenshot}
                   width={1280}
                   height={720}
-                  alt="SaaSify dashboard"
+                  alt="Trezo dashboard"
                   className="w-full h-auto"
                   priority
                 />
                 <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-black/10 dark:ring-white/10"></div>
               </div>
-              <div className="absolute -bottom-6 -right-6 -z-10 h-[300px] w-[300px] rounded-full bg-gradient-to-br from-primary/30 to-secondary/30 blur-3xl opacity-70"></div>
-              <div className="absolute -top-6 -left-6 -z-10 h-[300px] w-[300px] rounded-full bg-gradient-to-br from-secondary/30 to-primary/30 blur-3xl opacity-70"></div>
             </motion.div>
           </div>
         </section>
@@ -1039,6 +1045,7 @@ export default function LandingPage() {
             <div className="space-y-4">
               <div className="flex items-center gap-2 font-bold">
                 {/*<Logo className="size-8 shadow-sm" iconSize={18} strokeWidth={2.5} />*/}
+                <TrendingUp className="size-5" />
                 <span>Trezo</span>
               </div>
               <p className="text-sm text-muted-foreground">
