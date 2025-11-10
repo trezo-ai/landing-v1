@@ -23,6 +23,11 @@ import {
   MessagesSquare,
   Play,
   TrendingUp,
+  Brain,
+  Network,
+  ShieldCheck,
+  Eye,
+  Lock,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -78,40 +83,40 @@ export default function LandingPage() {
 
   const features = [
     {
-      title: "AI-Powered Risk Scoring",
+      title: "AI-Native Policy Management",
       description:
-        "Identify members at risk of quitting and take proactive action to keep them engaged.",
-      icon: <Zap className="size-5" />,
+        'Write what you need — "Lock USB access for all contractor laptops" — and Trezo generates, validates, and deploys the exact configurations to every relevant system.',
+      icon: <Brain className="size-5" />,
     },
     {
-      title: "Intelligent Member Check-ins",
+      title: "Cross-Platform Integration",
       description:
-        "Smart messages that follow up on missed visits and boost engagement.",
+        "Manage devices from Active Directory, Intune, Jamf, or MDMs simultaneously. No re-platforming, no migration — just seamless orchestration.",
+      icon: <Network className="size-5" />,
+    },
+    {
+      title: "Compliance Without Complexity",
+      description:
+        "Trezo continuously audits your environments, flags policy drift, and fixes inconsistencies before they become incidents.",
+      icon: <ShieldCheck className="size-5" />,
+    },
+    {
+      title: "Unified Device Intelligence",
+      description:
+        "Get real-time visibility across every endpoint — policies, compliance posture, and recent actions — all in one place.",
+      icon: <Eye className="size-5" />,
+    },
+    {
+      title: "Natural Language Agent",
+      description:
+        'Your AI admin assistant understands intents like "Create a secure login policy for all Windows servers" and executes them with full transparency.',
       icon: <MessagesSquare className="size-5" />,
     },
     {
-      title: "Personalized Voice Assistant",
+      title: "Secure On-Prem Execution",
       description:
-        "On-call AI coach that answers workout questions and guides members in real-time.",
-      icon: <PhoneCall className="size-5" />,
-    },
-    {
-      title: "Member Insights & Analytics",
-      description:
-        "Keep your data safe with end-to-end encryption and compliance features.",
-      icon: <BarChart className="size-5" />,
-    },
-    {
-      title: "Retention Playbooks",
-      description:
-        "Automated campaigns that convert hesitant members into loyal regulars.",
-      icon: <Play className="size-5" />,
-    },
-    {
-      title: "24/7 Support",
-      description:
-        "Get help whenever you need it with our dedicated support team.",
-      icon: <Star className="size-5" />,
+        "Trezo's local agent runs directly within your network, ensuring that credentials and directory access never leave your infrastructure.",
+      icon: <Lock className="size-5" />,
     },
   ];
 
@@ -226,13 +231,6 @@ export default function LandingPage() {
                 Features
               </Link>
               <Link
-                href="#testimonials"
-                className="py-2 text-sm font-medium"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Testimonials
-              </Link>
-              <Link
                 href="#pricing"
                 className="py-2 text-sm font-medium"
                 onClick={() => setMobileMenuOpen(false)}
@@ -284,14 +282,14 @@ export default function LandingPage() {
               >
                 Launching Soon
               </Badge>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-                Grow your gym, not your workload
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 pb-1.5">
+                Redefining How IT Teams Manage Devices
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                The all-in-one platform that helps gyms retain members, and
-                drive growth. Automate engagement, track performance, and focus
-                on what matters most—delivering an outstanding member
-                experience.
+                The AI-native platform that unifies policy, security, and
+                compliance across every environment. Trezo lets MSPs and IT
+                teams manage Active Directory, Intune, Jamf, and more — all
+                through natural language.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 {/*<Button size="lg" className="rounded-full h-12 px-8 text-base">
@@ -338,14 +336,14 @@ export default function LandingPage() {
               {/* 3D Window Frame */}
               <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-xl bg-gradient-to-br from-neutral-200/60 to-neutral-300/60 dark:from-neutral-700/60 dark:to-neutral-800/60 shadow-xl"></div>
               <div className="absolute inset-0 -z-10 translate-x-1 translate-y-1 rounded-xl bg-gradient-to-br from-neutral-100/80 to-neutral-200/80 dark:from-neutral-600/80 dark:to-neutral-700/80 shadow-lg"></div>
-              
+
               {/* Screenshot Container */}
               <div className="relative rounded-xl overflow-hidden shadow-2xl border border-border/40">
                 <Image
                   src={screenshot}
                   width={1280}
                   height={720}
-                  alt="Trezo dashboard"
+                  alt="Trezo unified dashboard mockup"
                   className="w-full h-auto"
                   priority
                 />
@@ -393,11 +391,13 @@ export default function LandingPage() {
                 Features
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Everything Your Gym Needs to Thrive
+                One Platform. Total Control.
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Our AI-powered platform gives gyms the tools to retain members,
-                optimize engagement, and maximize growth.
+                Trezo is the Cursor for Device Management — a universal policy
+                engine that bridges every system you already use. Define what
+                you want in plain English, and Trezo makes it happen — across
+                Windows, macOS, or mobile, instantly.
               </p>
             </motion.div>
 
@@ -609,11 +609,12 @@ export default function LandingPage() {
                 Pricing
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Simple, Transparent Pricing
+                Simple, Predictable Pricing
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Pick the plan that fits your gym's size and needs, with clear
-                pricing and no hidden fees
+                Choose a plan that fits your organization's size and automation
+                needs. No hidden fees, no complex licensing — just clear
+                per-device pricing.
               </p>
             </motion.div>
 
@@ -621,15 +622,15 @@ export default function LandingPage() {
               {[
                 {
                   name: "Base",
-                  price: "$99",
-                  suffix: "/location/month",
-                  description: "Perfect for single-location gyms running lean.",
+                  price: "$3",
+                  suffix: "/device/month",
+                  description:
+                    "Perfect for small MSPs and IT teams ready to automate policy management.",
                   features: [
-                    "Up to 250 active members (at that location)",
-                    "Retention dashboard (risk scores, churn %, visit trends)",
-                    "AI SMS nudges + call log",
-                    "CSV import/export for members",
-                    "Standard analytics (attendance, failed invoices, satisfaction trends)",
+                    "Unified policy control for AD and Intune",
+                    "AI-powered configuration generation",
+                    "Compliance dashboard (device posture, drift alerts)",
+                    "Local agent execution",
                     "Email support",
                   ],
                   cta: "Start Free Trial",
@@ -637,37 +638,34 @@ export default function LandingPage() {
                 },
                 {
                   name: "Pro",
-                  price: "$299",
-                  suffix: "/location/month",
+                  price: "$7",
+                  suffix: "/device/month",
                   description:
-                    "Ideal for multiple locations that want deep automation.",
+                    "Ideal for growing MSPs managing multiple clients and hybrid environments.",
                   features: [
-                    "Up to 1,500 active members per location",
-                    "Multi-channel AI outreach (SMS, WhatsApp, calls)",
-                    "Automated retention playbooks (no visit X days → AI nudge)",
-                    "Integration with CRMs (Mindbody, Xplor, Zen Planner) via API/webhooks",
-                    "Advanced analytics (segment reports, cross-location comparisons)",
-                    "Call transcripts + conversation insights",
-                    "Priority email + chat support",
+                    "Multi-platform policy management (AD, Intune, Jamf)",
+                    "AI-driven audit + remediation",
+                    "Automated compliance reporting",
+                    "Integrations with ConnectWise + Kaseya",
+                    "Role-based access control",
+                    "Priority chat support",
                   ],
                   cta: "Start Free Trial",
                   popular: true,
                 },
                 {
                   name: "Enterprise",
-                  price: "Custom",
-                  suffix: "/location",
+                  price: "Custom Pricing",
+                  suffix: "",
                   description:
-                    "For large chains and franchises with complex needs.",
+                    "For large IT organizations and MSPs with complex environments.",
                   features: [
-                    "Unlimited members per location",
-                    "Multi-location rollups & benchmarking (compare gyms in a chain)",
-                    "White-label branding (franchise identity)",
-                    "Custom analytics dashboards (corporate-level KPIs)",
-                    "Advanced AI persona customization (voice/tone)",
-                    "Unlimited storage (calls, messages, transcripts)",
-                    "Dedicated CSM + 24/7 support",
-                    "Custom integrations (ERP, loyalty apps, CRM)",
+                    "Unlimited devices",
+                    "Multi-tenant architecture + dedicated control plane",
+                    "Full API + webhook access",
+                    "On-prem or hybrid deployment",
+                    "Custom integrations (ServiceNow, CrowdStrike, SCCM)",
+                    "24/7 SLA-backed support + CSM",
                   ],
                   cta: "Contact Sales",
                 },
@@ -935,35 +933,34 @@ export default function LandingPage() {
               <Accordion type="single" collapsible className="w-full">
                 {[
                   {
-                    question: "How is pricing calculated?",
+                    question: "How does Trezo work?",
                     answer:
-                      "Pricing is per location. Base and Pro are billed per active location each month, and Enterprise is custom per location. You can add or remove locations any time.",
+                      "Trezo connects to your existing environments — like Active Directory or Intune — and translates natural language inputs into real configuration commands executed locally by our agent.",
                   },
                   {
-                    question: "How fast can we get set up?",
+                    question: "Does it replace my current tools?",
                     answer:
-                      "Most gyms are demo-ready in under an hour using CSV import. Full integration with systems like Mindbody can follow via API or webhooks without changing your current tools.",
+                      "No. Trezo enhances them. You keep your existing infrastructure, while Trezo acts as the intelligent layer on top that automates and unifies management.",
                   },
                   {
-                    question: "Do we need to switch CRMs?",
+                    question: "Is it secure?",
                     answer:
-                      "No. Trezo layers on top of your existing stack. Keep using your CRM for check-ins and billing while Trezo handles risk scoring, outreach, and retention analytics.",
+                      "Yes. All policy execution happens through your on-prem Trezo Agent. Credentials never leave your environment, and all communication is encrypted end-to-end.",
                   },
                   {
-                    question: "What data does the risk score use?",
+                    question: "How long does setup take?",
                     answer:
-                      "We use recent visits, days since last visit, attendance vs personal baseline, invoice outcomes, tenure, and engagement diversity. Each score includes reason codes so staff can see why someone is at risk.",
+                      "Most teams can deploy their first Trezo Agent and connect to AD in under 30 minutes.",
                   },
                   {
-                    question:
-                      "How does AI outreach handle consent and quiet hours?",
+                    question: "Which platforms does Trezo support?",
                     answer:
-                      "We honor per-member consent flags, enforce quiet hours, and process STOP keywords instantly. You control channels and frequency, and every message or call is logged.",
+                      "Currently Active Directory, Intune, and Jamf — with support for macOS MDMs and Linux policy frameworks coming soon.",
                   },
                   {
-                    question: "Who owns the data and how is it secured?",
+                    question: "Can I run Trezo in air-gapped environments?",
                     answer:
-                      "You own your data and can export it any time. Data is encrypted in transit and at rest, and access is restricted by role per location.",
+                      "Absolutely. Our agent supports full offline execution for regulated and secure deployments.",
                   },
                 ].map((faq, i) => (
                   <motion.div
@@ -1006,12 +1003,12 @@ export default function LandingPage() {
               className="flex flex-col items-center justify-center space-y-6 text-center"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-                AI That Keeps Your Members Engaged.
+                Simplify IT. Amplify Capability.
               </h2>
               <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">
-                Trezo helps gyms reduce churn with AI-powered insights, smart
-                outreach, and simple dashboards — all in one platform. Start
-                turning at-risk members into loyal ones today.
+                Trezo makes universal policy and compliance management
+                effortless — so IT teams can stop fighting complexity and start
+                scaling smarter.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
                 <Button
@@ -1032,7 +1029,7 @@ export default function LandingPage() {
                 </Button> */}
               </div>
               <p className="text-sm text-primary-foreground/80 mt-4">
-                1-month free trial. No credit card required. Cancel anytime.
+                30-day free trial. No credit card required. Cancel anytime.
               </p>
             </motion.div>
           </div>
@@ -1049,7 +1046,8 @@ export default function LandingPage() {
                 <span>Trezo</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                AI retention for gyms. Reduce churn. Keep members engaged.
+                AI-native policy and device management for MSPs and IT teams.
+                Unified control. Natural language. Zero friction.
               </p>
             </div>
 
@@ -1078,7 +1076,7 @@ export default function LandingPage() {
                     href={DEMO_BOOKING_URL}
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Schedule a demo
+                    Schedule a Demo
                   </Link>
                 </li>
               </ul>
