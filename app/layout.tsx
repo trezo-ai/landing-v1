@@ -7,9 +7,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Trezo – AI Retention for Gyms",
+  title: "Trezo – Redefining How IT Teams Manage Devices",
   description:
-    "Trezo helps gyms reduce churn and boost member loyalty with AI-powered insights, smart outreach, and simple dashboards. Keep your members engaged and grow your business.",
+    "The AI-native platform that unifies policy, security, and compliance across every environment. Trezo lets MSPs and IT teams manage Active Directory, Intune, Jamf, and more — all through natural language.",
   icons: {
     icon: "/icon.svg",
     shortcut: "/icon.svg",

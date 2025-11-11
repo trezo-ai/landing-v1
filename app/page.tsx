@@ -173,12 +173,12 @@ export default function LandingPage() {
               )}
               <span className="sr-only">Toggle theme</span>
             </Button>
-            <Link
+            {/* <Link
               href="#"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               Log in
-            </Link>
+            </Link> */}
             <Button
               onClick={() => window.open(DEMO_BOOKING_URL)}
               className="rounded-full"
@@ -633,7 +633,7 @@ export default function LandingPage() {
                     "Local agent execution",
                     "Email support",
                   ],
-                  cta: "Start Free Trial",
+                  cta: "Contact Sales",
                   popular: false,
                 },
                 {
@@ -650,7 +650,7 @@ export default function LandingPage() {
                     "Role-based access control",
                     "Priority chat support",
                   ],
-                  cta: "Start Free Trial",
+                  cta: "Contact Sales",
                   popular: true,
                 },
                 {
@@ -1028,9 +1028,9 @@ export default function LandingPage() {
                   Schedule a Demo
                 </Button> */}
               </div>
-              <p className="text-sm text-primary-foreground/80 mt-4">
+              {/* <p className="text-sm text-primary-foreground/80 mt-4">
                 30-day free trial. No credit card required. Cancel anytime.
-              </p>
+              </p> */}
             </motion.div>
           </div>
         </section>
@@ -1083,7 +1083,7 @@ export default function LandingPage() {
             </div>
 
             {/* Company */}
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <h4 className="text-sm font-bold">Company</h4>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -1111,14 +1111,14 @@ export default function LandingPage() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
 
           <div className="flex flex-col gap-4 sm:flex-row justify-between items-center border-t border-border/40 pt-8">
             <p className="text-xs text-muted-foreground">
               &copy; {new Date().getFullYear()} Trezo. All rights reserved.
             </p>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <Link
                 href="/#privacy"
                 className="text-xs text-muted-foreground hover:text-foreground transition-colors"
@@ -1137,7 +1137,7 @@ export default function LandingPage() {
               >
                 Contact
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>
